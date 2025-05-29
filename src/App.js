@@ -50,16 +50,16 @@ const Hero = () => {
       {/* Overlay pour le contenu - plus transparent pour voir l'animation */}
       <div className="absolute inset-0 backdrop-blur-sm"></div>
       
-      <div className="relative z-10 flex items-center justify-center min-h-screen py-10">
+      <div className="relative z-10 flex items-center justify-center min-h-screen pt-16 pb-10 md:py-10">
         <div className="text-center px-6 max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="space-y-8"
+            className="space-y-6 md:space-y-8"
           >
-            <div className="mb-8">
-              <span className="bg-primary-blue text-white px-6 py-2 rounded-full font-semibold text-sm uppercase tracking-wide shadow-lg">
+            <div className="mb-6 md:mb-8">
+              <span className="bg-primary-blue text-white px-4 py-2 md:px-6 md:py-2 rounded-full font-semibold text-xs md:text-sm uppercase tracking-wide shadow-lg">
                 Projet de digitalisation de business
               </span>
             </div>
